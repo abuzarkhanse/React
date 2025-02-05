@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrip</title>
+</head>
+<style>
+    .circles {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #red {
+        height: 100px;
+        width: 100px;
+        border: solid 1px black;
+        border-radius: 50%;
+        background-color: red;
+        cursor: pointer;
+    }
+
+    #yellow {
+        height: 100px;
+        width: 100px;
+        border: solid 1px black;
+        border-radius: 50%;
+        background-color: yellow;
+        cursor: pointer;
+    }
+
+    #blue {
+        height: 100px;
+        width: 100px;
+        border: solid 1px black;
+        border-radius: 50%;
+        background-color: blue;
+        cursor: pointer;
+    }
+</style>
+<body>
+
+    <!-- Inline JS -->
+
+    <button onclick="alert('Cliked')">Click Me!</button>
+
+
+    <p id="pg">This is a paragraph</p>
+    <button id="btn1">Click me to change</button>
+
+    <p id="text">ABUZAR</p>
+    <button id="btn2">Add Last Name</button>
+
+    <p id="empty"></p>
+    <button id="addtext">Click to add a text!</button>
+
+    <p id="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde minus voluptatibus enim vero itaque tempore dolorum blanditiis quaerat nam in! Voluptatum hic recusandae ratione deleniti quia dignissimos tenetur velit vero!</p>
+    <button id="btn3">Click to change style</button>
+    <p>By clicking the above btn 3 styles will be appear: Fontsize, Bg color, text color.</p>
+
+    <br><br><hr><br><br>
+
+    <div class="circles">
+        <div id="red"></div>
+        <div id="yellow"></div>
+        <div id="blue"></div>
+    </div>
+
+
+    <script>
+        // alert("External JS");
+
+        // Hide Text
+        document.getElementById("btn1").onclick = function() {
+            document.getElementById("pg").innerHTML = "Hide successfully";
+        };
+
+
+        // Append Text
+        document.getElementById("btn2").onclick = function() {
+            document.getElementById("text").innerHTML = "Full Name: " + document.getElementById("text").innerHTML + " KHAN";
+        }
+
+        document.getElementById("addtext").onclick = function() {
+            document.getElementById("empty").innerHTML = "Text Added Successfully!"
+        }
+
+        document.getElementById("btn3").onclick = function() {
+            document.getElementById("lorem").style.color = "white";
+            document.getElementById("lorem").style.backgroundColor = "black";
+            document.getElementById("lorem").style.fontSize = "larger";
+        }
+
+
+
+        document.getElementById("red").onclick = function() {
+            document.getElementById("red").style.display = "none";
+        }
+
+        document.getElementById("yellow").onclick = function() {
+            document.getElementById("yellow").style.display = "none";
+        }
+
+        document.getElementById("blue").onclick = function() {
+            document.getElementById("blue").style.display = "none";
+        }
+
+
+    </script>
+    
+</body>
+</html>
