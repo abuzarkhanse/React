@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+
+    <h3>Variables Pre-Requisite Part 02:</h3>
+
+    <label for="data">Input data:</label>
+
+    <input type="text" id="input">
+    <input type="button" id="btn" value="Add">
+
+    <p id="data">Your Data will be appear here!</p>
+
+
+    <script>
+        document.getElementById("btn").onclick = function() {
+
+            var newData = "";
+
+            newData =  document.getElementById("input").value;
+            document.getElementById("data").innerHTML = newData;
+        }
+    </script>
+    
+</body>
+</html>

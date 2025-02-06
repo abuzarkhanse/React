@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game How many Finger</title>
+</head>
+<body>
+
+    <h3>How many figers i'm holding up?</h3>
+
+    <label for="number">Guess number (1 - 10):</label>
+    <input type="number" width="40px" min="1" max="15" id="guess">
+    
+    <input  type="button" id="btn" value="Guess!">
+
+
+    <script>
+        document.getElementById("btn").onclick = function() {
+
+            var randomNumber = Math.random();
+
+            randomNumber = Math.floor(randomNumber * 10);
+
+            var guessValue = "";
+
+            guessValue = document.getElementById("guess").value;
+
+            if (guessValue == randomNumber) {
+                alert("You Got It!");
+            } else {
+                alert(randomNumber + " Nope! Try Again");
+            }
+            
+        }
+    </script>
+
+</body>
+</html>

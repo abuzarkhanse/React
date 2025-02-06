@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Statement</title>
+</head>
+<body>
+
+    <h3>Enter Your Fav Language:</h3>
+
+    <label for="lang">Fav Language:</label>
+    <input type="text" id="lang">
+    <input type="button" value="Check" id="btn">
+
+    <h1 id="input"></h1>
+
+
+    <script>
+        // syntax:
+
+        // var a = 10;
+        // var b = 10;
+
+        // if (a > b) {
+        //     document.write("A is greater then B");
+        // } 
+        // else if (a == b) {
+        //     document.write("A = B");
+        // } 
+        // else {
+        //     document.write("B is greater then B");
+        // }
+
+
+        document.getElementById("btn").onclick = function() {
+
+            var favLang = "React";
+
+            var enteredLang = "";
+
+            enteredLang = document.getElementById("lang").value;
+            document.getElementById("input").innerHTML = enteredLang;
+
+            if(enteredLang == favLang) {
+                alert("Exactly!");
+            } 
+            else if(enteredLang == "") {
+                alert("No such input!");
+            }
+            else {
+                alert("You're Wrong!");
+            } 
+            
+
+        }
+    </script>
+    
+</body>
+</html>
