@@ -1,0 +1,51 @@
+React: IS a library tha we are fredom from there standurds
+    Some are called them A framwork.
+
+I start today to learn this Langauage Library / FrameWork from Hitash have Youtube chennal:
+
+    Chai Our Code!
+
+SO Let's Start: 07 / 02 / 2025
+
+On terminal:
+
+npx: Node Package Execute 
+npm: Node Package Manager: Installer to install there language softwares
+
+Creat-React-App: A utility or software to make a new project.
+
+Instead of creat-react-app we can use vite which is and better then creat-react-app
+mean create there may be download some extra filess while in vite
+there s download only neccessary file related to our prjects.
+
+Mthods for Bothe:
+01:
+
+> project-folder > open terminal > type > npx create-react-app [project-name] > wait for downloading...
+
+After download completion > navigate to your project folder
+cd [project-name]
+
+Then > npm run start 
+
+Your project is live Now!
+
+
+02:
+
+npm create vite
+then yes!
+
+> There will be appear that update you profile name instead of vite...somthing...
+> After this there will be shwn list of framewor > chose > React
+> Then List of variant > chose > JavaScript
+
+DONE! Project is Ready Fast as compare npx create-react-app
+
+But wait there is one thing remaining that is no node-modules folder so install it:
+
+navigate to vite project by cd > then type in ternminal > npm I
+
+Now Done!!! and Complete!! Happy NOW! :)
+
+For starting the projec just type on terminal > npm run dev
