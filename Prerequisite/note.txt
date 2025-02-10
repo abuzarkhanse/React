@@ -1,0 +1,20 @@
+LECTURE 01:
+
+Interesting thing about JS:
+"JavaScript is dynamically typed Lamguage"
+
+Like other programming lan where we must write the spacific type for the variable
+
+for example in int is for number string is string type etc.
+
+But JS we can create a different type like we can strore 
+Number is type = FullName;
+
+> FullName = 25;
+> a = null;
+> can give a name for a variables its own.
+> Bust case sensitive for example Lower and Capital case naming.
+
+
+LECTURE 02"
+
