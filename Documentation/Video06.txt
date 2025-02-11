@@ -1,0 +1,57 @@
+Abstraction:
+1.  The createRoot create's its own DOM (Document Object Model) and then compare it with the web browser's DOM and only update those components which are actually updated.
+2.  But the browser removes the whole DOM and then recreates the whole DOM with the updated values this is called reload.
+3.  However virtual DOM tracks whole DOM like a tree like structure and updates only those values which were only changed.
+4.  But some values depends on network call so if we update a value it might get update immediately via a network call.
+5.  So we will have to update it again. To avoid this overhead we can drop the updation calls for the immediate value update.
+6.  The current algo used by the React is called the React Fibre algo.
+7.  The algo react uses to differentiate the web browser's tree and React's tree formed through create root is called reconciliation.
+8.  Reconciliation is the algo behind what popularly known as the Virtual-DOM.
+9.  In UI it is not necessary for every update to be applied immediately.
+
+
+What is DOM is React?
+> It play a crucial role that how UI updates are handled efficiently.
+  React USE Special Virtual DOM instead of direct Real (Browser) DOM.
+
+What is Real DOM?
+> This is actual structure of our webpage in the browser.
+
+What is virtual DOM in React?
+> React Introduce a virtual DOM (V-DOM) is a representation of real DOM.
+  Instead of updating real DOM (webpage-bowser) directly:
+
+  > It create a Virtual DOM (Copy of the UI)
+    Compare it with new virtual DOM with a previous version (using process called reconcilation).
+    Then find the difference and update only necessary part of real DOM mean the things that are updated are reaload.
+
+> This process make react faster and more efficient becuse we discuss that only changes elements are updates instead of relaoding whole web-page.
+
+
+CreateRoot: Method
+What they do behinnd the scene
+
+> A method that create a root container for rendering > (showing results in browser) a react application.
+
+> Create a complete DOM (virtual DOM) like strucuture and compare it with actual browser DOM
+
+> In virtual DOM we can track a complete DOM and update it when value change.
+
+> Updates those components that have changed. did not rendering the entire page.
+
+Documentation: 
+
+To read: https://github.com/acdlite/react-fiber-architecture : Complete Documentation about React Fiber.
+
+The goal of the  react fiber is to increase its suitability for areas like animation, layout and gestures.
+
+Key Features:
+> Include abality to puse, abort or reuse work.
+
+Fber is now Well Implemented Algorithm!
+
+Reconciliation: Reconsidering, Or Recursion.
+
+reconciliation
+The algorithm React uses to differentiate one tree with another to 
+determine which parts need to be changed.
