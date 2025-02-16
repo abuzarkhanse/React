@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in JS by Apna College</title>
+</head>
+<body>
+
+    <h3 class="myClass">Lets start DOM in JavaScript!</h3>
+
+    <h4 id="heading">Document Object Model</h4>
+
+    <p>
+        This is a Paragraph!
+    </p>
+
+    <p>
+        This is 2nd Paragraph!
+    </p>
+
+    <button>Click Me!</button>
+
+    <div>
+        <p>This is first Chile</p>
+
+        <p>This is a 2nd Child</p>
+
+        <p>This is a 3rd Child</p>
+    </div>
+
+    <div>
+        <img src="/01basicreact/public/logo192.png" alt="">
+
+        <img src="/01basicreact/public/logo512.png" alt="">
+
+        <h1>Home Work</h1>
+    </div>
+
+    <h3>Fruits</h3>
+    <div>
+        <ol>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Orange</li>
+        </ol>
+    </div>
+
+    <!-- <!-- <h1>Hello World</h1> -->
+
+    <div class="box"">1</div>
+    <div class="box"">2</div>
+    <div class="box"">3</div>
+
+
+    <script>
+        console.log('Hello World!');
+        
+        console.log(window);
+
+        let x = 10
+
+        console.log(x)
+
+        console.log(document.body.childNodes[1]) // print the spacific chile node with in body that is h3 on number 1
+
+        // To change complete bg color and text color by JS:
+        console.log(document.body.style.background = "Black", document.body.style.color = "white");  // this is base on user input do not change html file diretly. (such as: light mood and dark mood)
+        
+        let heading = document.getElementById('heading');
+        console.dir(heading);
+
+        let myClass = document.getElementsByClassName('myClass');
+        console.dir(myClass);
+        
+        let paras = document.getElementsByTagName("p");
+        console.dir(paras);
+
+        let firstEelements = document.querySelector("p") // select the first p tag
+        console.dir(firstEelements)
+        
+        let allEelements = document.querySelectorAll("p") // Select all the p tag
+        console.dir(allEelements)
+
+        console.dir(document.body.firstChild);
+        console.dir(document.body.lastChild);
+        
+        let div = document.querySelector("div");
+        console.dir(div);
+        
+        
+        // Tasks: On the Bases of DOM:
+        // 01:
+        let h1 = document.querySelector("h1")
+        console.log(h1.innerText) 
+        
+        h1.innerText = h1.innerText + " From Apna College"
+
+
+        // 02:
+        let box = document.querySelectorAll(".box")
+        console.log(box[0]);
+        console.log(box[1]);
+        console.log(box[2]);
+
+        box[0].innerText = "Updated01"
+        box[1].innerText = "Updated02"
+        box[2].innerText = "Updated03"
+
+        let idx = 1;
+        for (const boxes of box) {
+            boxes.innerText = `This is new value ${idx}`;
+            idx++;
+        }
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+DOM: Document Object Model
+> When a web page loaded the browser creates a DOM of the page.
+
+> HTML we write can access through access inside JS because they are convert to an Object.
+
+> To print our object we use console.dir();
+
+> console.log() is for general print in console.
+
+With in object there is another object:
+> Document: Model and representation of our html code.
+
+Window ==> Document ==> HTML ==> Head ==> meta, title, link
+                             ==> Body ==> div, javascrip
+
+
+When we need to change in html file dynamicaly we use DOM but change that are occuring by user called dynamically.
+
+DOM manipulation:
+> changees inside DOM
+
+
+First we start accessing to element:
+01: Selecting with ID: # by giving id to the element
+
+02: Selecting with Class: . by giving them class name.
+
+03: Selecting with tag name: have no class and id but simple tag such as <input> or <button>
+Next Level:
+04: Query Selector: Pass all the elements like when we need all the para tag or all the element match with provide tag in querySelector("").
+
+
+When we have no id in html so they give (null) output
+and when have no class they give (empty html collection)
+
